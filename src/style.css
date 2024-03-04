@@ -1,22 +1,51 @@
 :root {
-  --header-color: rgba(255, 0, 0, 0);
+  --header-color: rgba(32, 35, 53, 0.8);
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url(./Nunito-VariableFont_wght.ttf);
 }
 
 body {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   height: 100vh;
   background-image: url('./images/home.jpg');
+  background-size: 100% 100%;
   }
 
 header {
   display: flex;
+  flex-direction: column;
+  color: white;
+  background-size: 100%;
+  background-position: 50%;
+}
+
+.topBar {
+  display: flex;
   justify-content: space-between;
+  background-color: var(--header-color);
   align-items: center;
   height: 100px;
-  padding: 0px 20px;
+  padding: 0px 200px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--header-color);
+  padding-bottom: 100px;
+}
+
+.title h2 {
+  font-size: 5rem;
+  font-family: "Nunito", sans-serif;
 }
 
 #logo {
@@ -27,24 +56,35 @@ nav {
   display: flex;
   gap: 35px;
   height: 100%;
-  align-items: flex-end;
+  align-items: center;
+}
+
+h3 {
+  font-family: 'Pacifico', cursive;
 }
 
 nav button {
   border: none;
   outline: none;
-  width: 100px;
+  width: 50px;
   padding: 10px 10px;
-  border-radius: 10px 10px 0px 0px;
   cursor: pointer;
+  background-color: transparent;
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
 }
 
 nav button:hover {
-  padding-top: 20px;
-  color: white;
+  color: orange;
+}
+
+nav button.current {
+  color: orange;
 }
 
 #content {
   height: 100%;
   padding: 50px;
+  background-color: rgb(31, 31, 39);
 }

@@ -1,6 +1,7 @@
 import "./style.css";
 
 import { homePage } from "./home";
+import { menuPage } from "./menu";
 
 (function() {
     homePage();
@@ -11,6 +12,10 @@ import { homePage } from "./home";
                 switch (button.textContent) {
                     case 'Home':
                         homePage();
+                        break;
+
+                    case 'Menu':
+                        menuPage()
                         break;
                 }
             })
