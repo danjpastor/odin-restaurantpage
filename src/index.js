@@ -1,5 +1,6 @@
 import "./style.css";
 
+import { contactPage } from "./contact";
 import { homePage } from "./home";
 import { menuPage } from "./menu";
 
@@ -16,6 +17,10 @@ import { menuPage } from "./menu";
 
                     case 'Menu':
                         menuPage()
+                        break;
+                    
+                    case 'Contact':
+                        contactPage()
                         break;
                 }
             })
